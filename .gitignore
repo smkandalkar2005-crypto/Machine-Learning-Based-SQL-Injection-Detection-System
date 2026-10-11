@@ -29,11 +29,17 @@ ENV/
 *.db
 *.sqlite3
 
-# Models (Only bin files)
+# Model artifacts
 *.pth
 *.h5
 *.joblib
 *.pkl
+*.keras
+
+# Keep pretrained models required by the application
+!saved_models/
+!saved_models/*.joblib
+!saved_models/*.keras
 
 # Logs
 *.log
